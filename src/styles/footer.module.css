@@ -58,6 +58,7 @@ footer .btn button {
     gap: 1rem;
 }
 
+
 .footerNav .icons div {
     background-color: #9524FF;
     border-radius: 50%;
@@ -79,7 +80,8 @@ footer .btn button {
     }
 
     .footerNav ul {
-        flex-direction: column; /* Stack links vertically */
+        flex-direction: column; 
+        /* Stack links vertically */
         text-align: center;
     }
 

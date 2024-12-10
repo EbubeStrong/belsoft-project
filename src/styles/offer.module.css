@@ -1,6 +1,11 @@
+
+
+
+
+
 .offerSection{
     position: relative;
-  /* border: 2px solid red; */
+  /* border: 2px solid blue; */
   width: 100%;
 }
 
@@ -11,7 +16,7 @@
   /* border: 2px solid red; */
 }
 
-.offerContainerOne .heading-text {
+.offerContainerOne .headingText {
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,19 +27,11 @@
 .offerContainerOne h2 {
   font-size: 2rem;
   position: relative;
-  font-family: "Gilroy-Bold", sans-serif;
+  /* font-family: "Gilroy-Bold", sans-serif; */
   font-size: 40px;
   line-height: 32px;
   text-align: left;
 }
-
-/* .offerContainerOne h2::before {
-  content: url("../images/Line.png");
-  position: absolute;
-  text-align: center;
-  left: -10px;
-  top: 0;
-} */
 
 .faqItem {
   border-bottom: 1px solid var(--faq-item);
@@ -68,7 +65,7 @@
   content: "-";
 }
 
-.faqAnswer {
+.faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
@@ -84,12 +81,12 @@
 }
 
 
-/* start of line-image */
+/* start of lineImage */
 .offerSection .lineImageTwo {
   /* border: 2px solid blue; */
   position: relative;
   margin-top: -15rem;
-  z-index: -1;
+  z-index: -2;
 }
 
 .lineImageTwo img {
@@ -97,15 +94,14 @@
   height: 100%;
 }
 
-.offerSection .offerContainerTwo{
-   position: absolute;
+.offerContainerTwo{
+    position: absolute;
     display: flex;
     justify-content: center;
     top: 60%;
     padding: 0 3rem;
     gap: 3rem;
     /* border: 2px solid red; */
-    /* background-color: #fff; */
     width: 100%;
 }
 
@@ -130,11 +126,14 @@
     font-size: 3rem;
     margin-top: 10px;
     font-weight: 700;
+    white-space: nowrap;
     /* font-family: "Montserrat", sans-serif; */
 }
 
 .offerText .secondText{
     margin: 0 0 20px 0;
+    /* border: 2px solid red; */
+    
 }
 
 .offerText .secondText p{
@@ -151,15 +150,56 @@
 }
 
 
-.offerContainerTwo .offerImage{
+.offerContainerTwo .offer-image{
     width: 100%;
     /* border: 2px solid red; */
     /* margin: 20px auto; */
     padding-top: 1rem;
 }
-.offerContainerTwo .offerImage img{
+.offerContainerTwo .offer-image img{
     width: 75%;
      display: flex;
     align-self: center;
     justify-self: center;
+}
+
+@media(max-width: 1100px){
+  .offerContainerTwo .offer-image img{
+    width: 100%;
+  }
+  .offerSection .lineImageTwo {
+  /* border: 2px solid blue; */
+  position: relative;
+  margin-top: -10rem;
+}
+}
+
+@media(max-width: 778px){
+  .offerImage{
+    display: none;
+  }
+  .offerContainerTwo{
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+    position: relative;
+    margin-bottom: 10%;
+  }
+.offerText{
+  text-align: center;
+}
+.offerText .firstText h3{
+  text-align: center;
+}
+  .offerSection .lineImageTwo {
+    display: none;
+  }
+}
+
+@media(max-width: 650px){
+  .offerContainerTwo{
+    top: 70%;
+    /* position: relative; */
+    /* margin-top: -70%; */
+  }
 }

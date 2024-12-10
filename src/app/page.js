@@ -7,6 +7,8 @@ import RegisterInfo from "./components/RegisterInfo";
 import Register from "./components/RegisterAdvert";
 import Founders from "./components/foundersDetail";
 import Testimonials from "./components/Testimonial";
+import FAQ from "./components/FAQ";
+
 
 export default function HomePage() {
   return (
@@ -19,6 +21,7 @@ export default function HomePage() {
       <Register />
       <Founders />
       <Testimonials />
+      <FAQ />
     </>
   );
 }

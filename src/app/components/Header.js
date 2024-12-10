@@ -1,29 +1,63 @@
 // src/app/components/Header.js
 /* eslint-disable @next/next/no-img-element */
+"use client"; 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import headerStyle from "../../styles/header.module.css";
+// import Nav from "./Nav"
 
 const Header = () => {
+    useEffect(() => {
+      AOS.init({ duration: 1200 }); 
+    }, []);
   return (
     <header>
       <div className={`${headerStyle.header} ${headerStyle.desktopScreen}`}>
         <div className={headerStyle.logo}>
-          <img src="/images/Logo.png" alt="Founder's Friday Logo" />
-          <span>Founder's Friday</span>
+          <img src="/images/logo.png" alt="Founder's Friday Logo" />
+          <span data-aos="fade-in" data-aos-delay="100">
+            Founder's Friday
+          </span>
         </div>
 
         <div className={headerStyle.headerContentTwo}>
           <nav className={headerStyle.navLinks}>
             <ul>
-              <li className={headerStyle.active}>Home</li>
-              <li>About Us</li>
-              <li>Gallery</li>
-              <li>Contact Us</li>
+              <li
+                className={headerStyle.active}
+                data-aos="fade-in"
+                data-aos-delay="200"
+              >
+                Home
+              </li>
+              <li data-aos="fade-in" data-aos-delay="300">
+                About Us
+              </li>
+              <li data-aos="fade-in" data-aos-delay="400">
+                Gallery
+              </li>
+              <li data-aos="fade-in" data-aos-delay="500">
+                Contact Us
+              </li>
             </ul>
           </nav>
+          {/* <Nav /> */}
 
           <div className={headerStyle.loginContent}>
-            <button>
-              Register <span className={headerStyle.arrowIcon}></span>
+            <button data-aos="fade-in" data-aos-delay="700">
+              Register{" "}
+              <span className={headerStyle.arrowIcon}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style={{ fill: "rgba(149, 36, 255, 1)" }}
+                >
+                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+                </svg>
+              </span>
             </button>
           </div>
         </div>

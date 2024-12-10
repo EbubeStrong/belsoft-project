@@ -3,6 +3,7 @@
     display: flex;
     gap: 2rem;
     background-color: #fff;
+    margin-top: 7rem;
     margin-bottom: 4rem;
     /* border: 2px solid blue; */
     /* height: 300px; */
@@ -24,27 +25,53 @@
     height: 400px;
 }
 
-/* start of about-text-content */
+/* start of aboutTextContent */
 .aboutSection .aboutTextContent{
     width: 100%;
-    /* border: 2px solid red; */
+    height: 400px;
+    /* border: 2px solid blue; */
+}
+
+.aboutTextContent .aboutText{
+    height: 100%;
+    /* width: 100%; */
     display: flex;
-    padding: 1rem;
+    padding: 0 1rem;
+
+    position: relative;
+    /* border: 2px solid red; */
+
+}
+
+.aboutText .text{
+    padding-left: 1rem;
+}
+
+.aboutText .text p{
+    padding-top: 3rem;
+    /* padding-bottom: 2rem; */
 }
 
 .aboutTextContent .border img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 98%;
     /* height: 74vh; */
     /* min-height: auto; */
 }
 
 .aboutText h2{
     /* font-family: "Montserrat", sans-serif; */
+    margin-top: -10px;
     font-weight: 600;
     font-size: 27px;
 }
 
 .aboutText p{
-    margin-top: 2rem;
+    margin-top: -1rem;
     font-size: 20px;
 }
 
@@ -53,12 +80,22 @@
     align-items: center;
     gap: 10px;
     margin-top: 2rem;
+    /* padding-bottom: 6.5rem; */
 }
 
 .aboutSection .btns button{
-    padding: 10px 50px 10px 20px;
+    padding: 10px 50px  ;
     border: none;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moneyIcon img{
+    width: 24px;
+    height: 24px;
 }
 
 .aboutSection .btns button:first-child{
@@ -72,16 +109,39 @@
 }
 
 .aboutSection h3{
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    position: absolute;
+    bottom: 0;
 }
 
-@media(max-width: 650px){
+@media(max-width: 1300px){
+    .aboutTextContent .border img{
+    height: 100%;
+}
+.aboutSection h3{
+    margin-top: 0;
+}
+}
+@media(max-width: 1100px){
+.aboutSection h3{
+    /* margin-top: 3rem; */
+    position: absolute;
+    bottom: -20px;
+}
+}
+@media(max-width: 760px){
     .aboutSection{
     padding: 0 3rem;
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 .aboutSection .btns{
     justify-content: center;
+}
+.aboutSection h3{
+    /* margin-top: 3rem; */
+    position: absolute;
+    bottom: -10px;
 }
 }

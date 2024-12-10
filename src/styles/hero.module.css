@@ -16,7 +16,7 @@
     color: #000;
 }
 
-.heroSection .first-text {
+.heroSection .firstText {
     font-weight: 600;
 }
 
@@ -68,6 +68,10 @@
     font-size: 16px;
     margin-top: 20px;
 }
+.heroSection h3 span{
+    margin-left: 10px;
+}
+
 
 .heroSection .imageSection {
     width: 100%;
@@ -93,26 +97,6 @@
     height: auto;
 }
 
-/* Responsive adjustments */
-/* @media (max-width: 1024px) {
-    .hero-section {
-        padding: 3rem;
-        gap: 1.5rem;
-    }
-
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-
-    .hero-section img {
-        max-width: 350px; 
-    }
-
-    .line-image img {
-        max-width: 700px; 
-    }
-} */
-
 @media (max-width: 1100px) {
     .heroSection {
         padding: 2rem;
@@ -135,6 +119,9 @@
 }
 
 @media (max-width: 768px){
+    .heroSection .firstText {
+        font-size: 18px;
+}
     .heroSection .imageSection {
         display: none; /* Hide image on smaller screens */
     }
@@ -146,11 +133,16 @@
 }
 .heroSection .secondText {
     padding-right: 0;
+    text-align: justify; 
+    word-spacing: normal; 
+    line-height: 1.6; 
+    hyphens: auto;
 }
+
 .lineImage{
     display: none;
 }
-.collabIcons .icon {
+.collab-icons .icon {
     justify-content: center;
 }
 }

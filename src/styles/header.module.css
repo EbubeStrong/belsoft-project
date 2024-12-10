@@ -127,6 +127,10 @@
   color: #9524FF;
 }
 
+.header .loginContent button span svg{
+  color: rgba(149, 36, 255, 1);;
+}
+
  .desktopScreen {
     display: none;
   }

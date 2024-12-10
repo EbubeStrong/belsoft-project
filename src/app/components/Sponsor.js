@@ -1,14 +1,24 @@
+"use client";
+/* eslint-disable @next/next/no-img-element */
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import sponsorStyle from "../../styles/sponsor.module.css";
 
 const Sponsor = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section className={sponsorStyle.sponsorSection}>
       <div className={sponsorStyle.sponsorTextOne}>
-        <h3>Sponsor The Next Friday</h3>
+        <h3 data-aos="fade-in" data-aos-delay="100">
+          Sponsor The Next Friday
+        </h3>
       </div>
 
       <div className={sponsorStyle.sponsorHeader}>
-        <h2>
+        <h2 data-aos="fade-in" data-aos-delay="200">
           Why Sponsor <br />
           Founders Friday?
         </h2>
@@ -23,8 +33,7 @@ const Sponsor = () => {
                 Opportunities
               </h3>
               <p>
-                Connect with industry leaders, founders, and potential
-                partners.
+                Connect with industry leaders, founders, and potential partners.
               </p>
             </div>
 
@@ -53,8 +62,8 @@ const Sponsor = () => {
             <div className={sponsorStyle.circle}>
               <h3>Visibility</h3>
               <p>
-                Gain exposure to a targeted audience of young professionals
-                and entrepreneurs.
+                Gain exposure to a targeted audience of young professionals and
+                entrepreneurs.
               </p>
             </div>
           </div>
@@ -80,23 +89,29 @@ const Sponsor = () => {
 
               <div className={sponsorStyle.labelInput}>
                 <label htmlFor="company">Company (optional)</label>
-                <input
-                  type="text"
-                  id="company"
-                  placeholder="Company name"
-                />
+                <input type="text" id="company" placeholder="Company name" />
               </div>
             </div>
 
             <div className={sponsorStyle.labelInputWrap}>
               <div className={sponsorStyle.labelInput}>
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="Email address" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email address"
+                  required
+                />
               </div>
 
               <div className={sponsorStyle.labelInput}>
                 <label htmlFor="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Phone number" required />
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Phone number"
+                  required
+                />
               </div>
             </div>
 

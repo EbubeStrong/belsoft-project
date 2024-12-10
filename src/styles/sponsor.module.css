@@ -6,7 +6,7 @@
     padding: 0 2rem 2rem 2rem;
 }
 
-.sponsorSection .sponsorTextOne h3{
+.sponsorSection .sponsor-text-1 h3{
     color: #9524FF;
     font-weight: 900;
     font-size: 20px;
@@ -50,6 +50,10 @@
     box-shadow: 2px 2px 20px 10px #0000000f;
 
 }
+
+.sponsorText .circleContent{
+    /* width: 100%; */
+}
 .sponsorText .circleContent{
     width: 100%;
     /* border: 2px solid red; */
@@ -92,7 +96,7 @@
     color: rgb(102, 100, 100);
 }
 
-.sponsorText-form .formContent{
+.sponsorTextForm .formContent{
     width: 100%;
     /* border: 2px solid red; */
 }
@@ -216,20 +220,12 @@
 }
 }
 @media(max-width: 650px){
-    .sponsorSection{ 
-    padding: 0;
-}
-    .sponsorText{
-    padding: 0 2rem;
-    margin-left: 0;
-}
     .sponsorText .circleContent{
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* margin: 0 auto; */
     display: flex;
-    padding: 1rem;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -238,6 +234,6 @@
     border: 2px solid #9524FF; 
     margin: 20px;
     width: 50%;
-    height: 250px;
+    height: 220px;
 }
 }

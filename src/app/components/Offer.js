@@ -1,6 +1,13 @@
+"use client";
 import offerStyle from "../../styles/offer.module.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Offer = () => {
+    useEffect(() => {
+      AOS.init({ duration: 1200 });
+    }, []);
   return (
     <section className={offerStyle.offerSection}>
       <div className={offerStyle.offerContainerOne}>
@@ -8,37 +15,46 @@ const Offer = () => {
           <h2>Offer</h2>
         </div>
         <div className={offerStyle.faqList}>
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <input type="checkbox" id="faq1" className={offerStyle.faqToggle} />
             <label htmlFor="faq1" className={offerStyle.faqQuestion}>
-              How does URL shortening work?
+              How can I register for the event?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                URL shortening works by taking a long URL and creating a
-                shorter, unique URL that redirects to the original page. When a
-                user clicks the shortened link, they are quickly redirected to
-                the intended destination.
+                You can register for the event by visiting our event
+                registration page and filling out the online registration form.
+                Payment can be made via credit card, PayPal, or bank transfer.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <input type="checkbox" id="faq2" className={offerStyle.faqToggle} />
             <label htmlFor="faq2" className={offerStyle.faqQuestion}>
-              Is it necessary to create an account to use the URL shortening
-              service?
+              Is there a deadline for registration?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                While you can use basic URL shortening without an account,
-                creating an account gives you access to additional features such
-                as link history, analytics, and custom URLs.
+                Yes, the registration deadline is [insert date]. Make sure to
+                register before this date to secure your spot at the event.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <input type="checkbox" id="faq3" className={offerStyle.faqToggle} />
             <label htmlFor="faq3" className={offerStyle.faqQuestion}>
               Are the shortened links permanent? Will they expire?
@@ -53,91 +69,108 @@ const Offer = () => {
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <input type="checkbox" id="faq4" className={offerStyle.faqToggle} />
             <label htmlFor="faq4" className={offerStyle.faqQuestion}>
-              Are there any limitations on the number of URLs I can shorten?
+              Can I transfer my registration to someone else if I can't attend?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                Free users can shorten a limited number of URLs per day. Premium
-                users enjoy higher or unlimited URL shortening capabilities,
-                depending on their subscription plan.
+                Yes, you can transfer your registration to another person.
+                Contact our support team at belsoft@support.com with the details
+                of the transfer.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <input type="checkbox" id="faq5" className={offerStyle.faqToggle} />
             <label htmlFor="faq5" className={offerStyle.faqQuestion}>
-              Can I customize the shortened URLs to reflect my brand or content?
+              Will meals and refreshments be provided at the event?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                Yes, premium users can customize their shortened URLs with their
-                own branded domain or custom slugs, making the links more
-                recognizable and on-brand.
+                Yes, breakfast, lunch, and refreshments will be provided
+                throughout the day. If you have specific dietary requirements,
+                please let us know during the registration process.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <input type="checkbox" id="faq6" className={offerStyle.faqToggle} />
             <label htmlFor="faq6" className={offerStyle.faqQuestion}>
-              Can I track the performance of my shortened URLs?
+              Can I get a refund if I cancel my registration?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                Yes, of course you can track the performance of your shortened
-                URLs
+                Refunds are available up to [insert date] with a processing fee.
+                Cancellations after this date will not be eligible for a refund.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <input type="checkbox" id="faq7" className={offerStyle.faqToggle} />
             <label htmlFor="faq7" className={offerStyle.faqQuestion}>
-              How secure is the URL shortening service? Are the shortened links
-              protected against spam or malicious activity?
+              How can I access event materials (like presentation slides) after
+              the event?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                It is going to be very secured in getting the URL shortening
-                service and yes the shortened links are used to protect against
-                spam or malicious activity
+                All event materials will be made available on our website within
+                [insert timeframe] after the event. You'll receive instructions
+                on how to access them via email.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             <input type="checkbox" id="faq8" className={offerStyle.faqToggle} />
             <label htmlFor="faq8" className={offerStyle.faqQuestion}>
-              What is a QR code and what can it do?
+              Is parking available at the event venue?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                A QR code (Quick Response code) is a scannable two-dimensional
-                barcode that can store and share various types of
-                information—such as website links, contact details, Wi-Fi
-                credentials, or payment details—and is easily accessed using a
-                smartphone or QR scanner to connect the physical and digital
-                worlds seamlessly
+                Yes, there is ample parking available at the venue. A map with
+                parking details will be provided before the event.
               </p>
             </div>
           </div>
 
-          <div className={offerStyle.faqItem}>
+          <div
+            className={offerStyle.faqItem}
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
             <input type="checkbox" id="faq9" className={offerStyle.faqToggle} />
             <label htmlFor="faq9" className={offerStyle.faqQuestion}>
-              Is there an API available for integrating the URL shortening
-              service into my own applications or websites?
+              Will there be networking opportunities at the event?
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                Yes, an API is typically available for integrating a URL
-                shortening service into your own applications or websites,
-                allowing you to programmatically shorten URLs, manage links, and
-                access analytics directly within your software.
+                Yes, we encourage networking throughout the event, including
+                breakout sessions, workshops, and an evening social gathering.
               </p>
             </div>
           </div>
@@ -145,21 +178,32 @@ const Offer = () => {
       </div>
 
       <div className={offerStyle.lineImageTwo}>
-        <img src="./images/Vector 3.svg" alt="" />
+        <img
+          data-aos="fade-left"
+          data-aos-delay="100"
+          src="./images/Vector 3.svg"
+          alt=""
+        />
       </div>
 
       <div className={offerStyle.offerContainerTwo}>
         <div className={offerStyle.offerText}>
           <div className={offerStyle.firstText}>
-            <h3>Founders Friday</h3>
-            <p className={offerStyle.textOne}>
+            <h3 data-aos="fade-up" data-aos-delay="200">
+              Founders Friday
+            </h3>
+            <p
+              data-aos="fade-in"
+              data-aos-delay="300"
+              className={offerStyle.textOne}
+            >
               What Happens At <br />
               Founders Friday
             </p>
           </div>
 
           <div className={offerStyle.secondText}>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
               rutrum felis. Nulla nibh lorem, facilisis vel est at, vehicula
               dignissim lacus. Cras sagittis imperdiet dolor, eget accumsan leo
@@ -169,13 +213,29 @@ const Offer = () => {
             </p>
           </div>
 
-          <button>
-            Learn More <span></span>
+          <button data-aos="fade-in" data-aos-delay="500">
+            Learn More{" "}
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style={{ fill: "rgb(255, 255, 255)" }}
+              >
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+              </svg>
+            </span>
           </button>
         </div>
 
         <div className={offerStyle.offerImage}>
-          <img src="./images/Frame 714.png" alt="" />
+          <img
+            data-aos="fade-in"
+            data-aos-delay="300"
+            src="./images/Frame 714.png"
+            alt=""
+          />
           {/* <img src="" alt="" /> */}
         </div>
       </div>

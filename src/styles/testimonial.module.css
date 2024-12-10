@@ -1,34 +1,207 @@
-.testimonials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    position: relative;
-    /* border: 2px solid red; */
+/* General Section Styles */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
 }
 
-.testimonials .arrowIcons{
-    margin: 0 0 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 17%;
-    right: 20px;
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
-.testimonials .images{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.testimonials h4 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-.testimonials .images img{
-    width: 100px;
+
+/* Individual Testimonial Card */
+.images {
+  flex: 0 0 100%; /* Each slide takes full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.testimonials .images .text{
-    text-align: center;
+.testiomonialWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
+.container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+}
+
+.text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Arrow Icons */
+.arrowIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.arrowIcons span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrowIcons span:hover {
+  background-color: #bbb;
+}
+
+/* SVG Styling */
+.arrowIcons svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}
+
+
+/* Container for all slides */
+.testimonialContent {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+/* Individual Slide */
+.slide {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonial Card Wrapper */
+.testimonialWrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Container for Image */
+.container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #ddd;
+}
+
+/* Text Content */
+.text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Arrow Navigation */
+.arrowIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.arrowIcons span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrowIcons span:hover {
+  background-color: #bbb;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 1.5rem;
+  }
+
+  .testiomonialWrapper {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .arrowIcons span {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrowIcons svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 100%; /* Single slide per view */
+  }
+
+  .testimonialContent {
+    width: 100%; /* Adjust container width for single slides */
+  }
+}
+
