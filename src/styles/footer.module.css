@@ -1,0 +1,104 @@
+footer .logo {
+    display: flex;
+    /* flex-direction: column; Stack items on small screens */
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .logo img {
+    width: 50px;
+}
+
+footer .footerText {
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer .footerText h2 {
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+footer .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer .btn button {
+    padding: 10px 20px;
+    border: 1px solid #9524FF;
+    border-radius: 20px;
+    color: #9524FF;
+    background-color: transparent;
+    /* font-family: "Montserrat", sans-serif; */
+    cursor: pointer;
+}
+
+.footerNav {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3rem;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 10px;
+}
+
+.footerNav ul,
+.footerNav .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerNav .icons div {
+    background-color: #9524FF;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerNav {
+        flex-direction: column; /* Stack navigation on smaller screens */
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .footerNav ul {
+        flex-direction: column; /* Stack links vertically */
+        text-align: center;
+    }
+
+    .footerNav .icons {
+        justify-content: center; /* Center social icons */
+    }
+}
+
+@media (max-width: 480px) {
+    footer .logo img {
+        width: 40px; /* Reduce logo size for small screens */
+    }
+
+    footer .btn button {
+        padding: 8px 16px; /* Adjust button size */
+    }
+
+    .footerNav ul,
+    .footerNav .icons {
+        gap: 0.5rem; /* Reduce gaps */
+    }
+}

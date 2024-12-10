@@ -1,0 +1,180 @@
+
+
+.header.mobileScreen {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.header.mobileScreen nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header ul li{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.header ul .active{
+    color: #8300FF;
+}
+
+.hamburgerCheckbox {
+  display: none;
+}
+
+.hamburger,
+.closeIcon {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: flex;
+  position: relative;
+  right: 3rem;
+}
+
+.close .navLinks {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.closeIcon {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 999;
+}
+
+.hamburgerCheckbox:checked ~ .hamburger {
+  display: none;
+}
+
+.hamburgerCheckbox:checked ~ .close .closeIcon {
+  display: block;
+  z-index: 999;
+}
+
+.hamburgerCheckbox:checked ~ .close .navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 70%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  z-index: 1;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+  opacity: 1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  padding: 8px 0px 0px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .header .logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo span {
+    font-size: 20px;
+    font-weight: 700;
+    /* font-family: "Monterrat", sans-serif; */
+  }
+
+
+.header .loginContent button{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #9524FF;
+  color: #9524FF;
+}
+
+ .desktopScreen {
+    display: none;
+  }
+
+@media screen and (min-width: 800px) {
+  /* Header Responsiveness */
+  .header.mobileScreen {
+    display: none;
+  }
+  .desktopScreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 1rem; */
+  }
+  .header.desktopScreen .headerContentTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    /* padding: 0 10px; */
+    width: 100%;
+    max-width: 500px;
+    /* border: 2px solid red; */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    /* border: 2px solid red; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .header nav ul {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+  }
+
+  
+/* End of Header min-width responsiveness*/
+}

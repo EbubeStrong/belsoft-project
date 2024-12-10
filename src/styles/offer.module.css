@@ -1,0 +1,165 @@
+.offerSection{
+    position: relative;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.offerContainerOne {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  /* border: 2px solid red; */
+}
+
+.offerContainerOne .heading-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.offerContainerOne h2 {
+  font-size: 2rem;
+  position: relative;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 32px;
+  text-align: left;
+}
+
+/* .offerContainerOne h2::before {
+  content: url("../images/Line.png");
+  position: absolute;
+  text-align: center;
+  left: -10px;
+  top: 0;
+} */
+
+.faqItem {
+  border-bottom: 1px solid var(--faq-item);
+  margin-bottom: 1rem;
+}
+
+.faqToggle {
+  display: none;
+}
+
+.faqQuestion {
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.faqQuestion::after {
+  content: "+";
+  font-size: 1.5rem;
+}
+
+.faqToggle:checked + .faqQuestion::after {
+  content: "-";
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.faqToggle:checked ~ .faqAnswer {
+  max-height: 1000px;
+  transition: max-height 0.5s ease;
+}
+
+
+/* start of line-image */
+.offerSection .lineImageTwo {
+  /* border: 2px solid blue; */
+  position: relative;
+  margin-top: -15rem;
+  z-index: -1;
+}
+
+.lineImageTwo img {
+  width: 100%;
+  height: 100%;
+}
+
+.offerSection .offerContainerTwo{
+   position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 60%;
+    padding: 0 3rem;
+    gap: 3rem;
+    /* border: 2px solid red; */
+    /* background-color: #fff; */
+    width: 100%;
+}
+
+.offerText{
+    width: 100%;
+    /* border: 2px solid red; */
+
+}
+
+.offerText .firstText{
+    margin: 0 0 20px 0;
+}
+
+.offerText .firstText h3{
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-align: left;
+    color: #9524FF;
+}
+
+.offerText .firstText p{
+    font-size: 3rem;
+    margin-top: 10px;
+    font-weight: 700;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+.offerText .secondText{
+    margin: 0 0 20px 0;
+}
+
+.offerText .secondText p{
+    font-size: 17px;
+    color: #4C4452;
+}
+
+.offerText button{
+    padding: 10px 30px;
+    background-color: #9524FF;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+
+.offerContainerTwo .offerImage{
+    width: 100%;
+    /* border: 2px solid red; */
+    /* margin: 20px auto; */
+    padding-top: 1rem;
+}
+.offerContainerTwo .offerImage img{
+    width: 75%;
+     display: flex;
+    align-self: center;
+    justify-self: center;
+}
