@@ -3,20 +3,19 @@
     padding: 3rem;
     align-items: center;
     gap: 2rem;
-    /* flex-wrap: wrap;  */
 }
 
 .foundersDocumentary .image {
-    width: 50%; /* Set width for the image container */
+    width: 50%;
 }
 
 .foundersDocumentary .image img {
-    width: 100%; /* Ensure image scales properly */
-    border-radius: 8px; /* Optional: Add some styling for better aesthetics */
+    width: 100%; 
+    border-radius: 8px; 
 }
 
 .foundersDocumentary .textContent {
-    width: 50%; /* Set width for the text content */
+    width: 50%; 
 }
 
 .foundersDocumentary .textContent p:first-child {
@@ -41,17 +40,17 @@
 }
 
 .foundersDocumentary .textContent button:hover {
-    background-color: #7519cc; /* Darker shade on hover */
+    background-color: #7519cc; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .foundersDocumentary {
-        gap: 1.5rem; /* Reduce gap on medium screens */
+        gap: 1.5rem; 
     }
 
     .foundersDocumentary .textContent p:first-child {
-        font-size: 18px; /* Slightly smaller font */
+        font-size: 18px; 
     }
 
     .foundersDocumentary .textContent p:nth-child(2) {
@@ -61,24 +60,24 @@
 
 @media (max-width: 768px) {
     .foundersDocumentary {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align content to the left */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .foundersDocumentary .image, 
     .foundersDocumentary .textContent {
-        width: 100%; /* Full width for both containers */
+        width: 100%; 
     }
 
     .foundersDocumentary .textContent button {
-        width: auto; /* Allow button to size naturally */
-        padding: 8px 30px; /* Adjust padding */
+        width: auto;
+        padding: 8px 30px; 
     }
 }
 
 @media (max-width: 480px) {
     .foundersDocumentary {
-        padding: 2rem 1rem; /* Adjust padding for smaller devices */
+        padding: 2rem 1rem; 
     }
 
     .foundersDocumentary .textContent p:first-child {
@@ -90,6 +89,6 @@
     }
 
     .foundersDocumentary .textContent button {
-        padding: 6px 20px; /* Compact padding for small screens */
+        padding: 6px 20px; 
     }
 }

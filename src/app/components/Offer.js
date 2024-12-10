@@ -1,8 +1,8 @@
 "use client";
-import offerStyle from "../../styles/offer.module.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import offerStyle from "../../styles/offer.module.css";
 
 const Offer = () => {
     useEffect(() => {
@@ -116,7 +116,7 @@ const Offer = () => {
             </label>
             <div className={offerStyle.faqAnswer}>
               <p>
-                Refunds are available up to [insert date] with a processing fee.
+                Refunds are available up to 20th December with a processing fee.
                 Cancellations after this date will not be eligible for a refund.
               </p>
             </div>

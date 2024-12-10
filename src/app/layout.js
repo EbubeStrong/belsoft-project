@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <main>{children}</main> {/* Render specific page content here */}
+        <main>{children}</main> 
         <Footer />
       </body>
     </html>

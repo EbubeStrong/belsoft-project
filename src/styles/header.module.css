@@ -1,5 +1,3 @@
-
-
 .header.mobileScreen {
   display: flex;
   justify-content: space-between;
@@ -178,7 +176,4 @@
     height: auto;
     white-space: nowrap;
   }
-
-  
-/* End of Header min-width responsiveness*/
 }

@@ -1,6 +1,5 @@
 footer .logo {
     display: flex;
-    /* flex-direction: column; Stack items on small screens */
     align-items: center;
     gap: 10px;
     margin-top: 20px;
@@ -17,7 +16,7 @@ footer .footerText {
 }
 
 footer .footerText h2 {
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 
 footer .btn {
@@ -33,13 +32,13 @@ footer .btn button {
     border-radius: 20px;
     color: #9524FF;
     background-color: transparent;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
 }
 
 .footerNav {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -65,7 +64,6 @@ footer .btn button {
     padding: 10px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     footer .logo {
         flex-direction: column;
@@ -73,7 +71,7 @@ footer .btn button {
     }
 
     .footerNav {
-        flex-direction: column; /* Stack navigation on smaller screens */
+        flex-direction: column; 
         align-items: center;
         gap: 1.5rem;
         padding: 1rem;
@@ -81,26 +79,25 @@ footer .btn button {
 
     .footerNav ul {
         flex-direction: column; 
-        /* Stack links vertically */
         text-align: center;
     }
 
     .footerNav .icons {
-        justify-content: center; /* Center social icons */
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
     footer .logo img {
-        width: 40px; /* Reduce logo size for small screens */
+        width: 40px;
     }
 
     footer .btn button {
-        padding: 8px 16px; /* Adjust button size */
+        padding: 8px 16px; 
     }
 
     .footerNav ul,
     .footerNav .icons {
-        gap: 0.5rem; /* Reduce gaps */
+        gap: 0.5rem; 
     }
 }

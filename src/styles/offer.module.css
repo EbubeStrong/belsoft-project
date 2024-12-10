@@ -1,11 +1,5 @@
-
-
-
-
-
 .offerSection{
     position: relative;
-  /* border: 2px solid blue; */
   width: 100%;
 }
 
@@ -13,7 +7,6 @@
   max-width: 900px;
   margin: 4rem auto;
   padding: 2rem;
-  /* border: 2px solid red; */
 }
 
 .offerContainerOne .headingText {
@@ -27,14 +20,13 @@
 .offerContainerOne h2 {
   font-size: 2rem;
   position: relative;
-  /* font-family: "Gilroy-Bold", sans-serif; */
   font-size: 40px;
   line-height: 32px;
   text-align: left;
 }
 
 .faqItem {
-  border-bottom: 1px solid var(--faq-item);
+  border-bottom: 1px solid grey;
   margin-bottom: 1rem;
 }
 
@@ -50,7 +42,6 @@
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  font-family: "Gilroy-Medium", sans-serif;
   font-size: 20px;
   line-height: 32px;
   text-align: left;

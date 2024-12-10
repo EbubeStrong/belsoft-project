@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     padding: 5rem;
-    gap: 2rem; /* Maintain gap between text and image sections */
+    gap: 2rem;
 }
 
 .heroSection .textSection {
@@ -33,7 +33,7 @@
     font-size: 2.6rem;
     font-weight: 600;
     margin-top: 10px;
-    white-space: nowrap; /* Allow text wrapping */
+    white-space: nowrap;
 }
 
 .heroSection button {
@@ -75,13 +75,13 @@
 
 .heroSection .imageSection {
     width: 100%;
-    max-width: 500px; /* Limit max image size */
-    text-align: center; /* Center image */
+    max-width: 500px; 
+    text-align: center; 
 }
 
 .heroSection .imageSection img {
-    width: 100%; /* Ensure responsiveness */
-    max-width: 400px; /* Adjust for larger screens */
+    width: 100%; 
+    max-width: 400px; 
 }
 
 .lineImage {
@@ -93,7 +93,7 @@
 
 .lineImage img {
     width: 100%;
-    max-width: 900px; /* Keep line image responsive */
+    max-width: 900px; 
     height: auto;
 }
 
@@ -108,13 +108,11 @@
     }
 
     .heroSection img {
-        max-width: 500px; /* Further reduce image size */
+        max-width: 500px; 
     }
 
     .lineImage {
     right: 0;
-    /* border: 2px solid red; */
-        /* max-width: 600px;  */
     }
 }
 
@@ -123,12 +121,11 @@
         font-size: 18px;
 }
     .heroSection .imageSection {
-        display: none; /* Hide image on smaller screens */
+        display: none;
     }
     .heroSection .textSection {
     width: 100%;
     max-width: 100%; 
-    /* border: 2px solid red; */
     text-align: center;
 }
 .heroSection .secondText {
@@ -160,10 +157,10 @@
     }
 
     .heroSection img {
-        max-width: 250px; /* Shrink image on mobile */
+        max-width: 250px;
     }
 
     .lineImage img {
-        max-width: 500px; /* Adjust line image size */
+        max-width: 500px; 
     }
 }

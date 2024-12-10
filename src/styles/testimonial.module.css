@@ -1,4 +1,3 @@
-/* General Section Styles */
 .testimonials {
   background-color: #f9f9f9;
   padding: 2rem;
@@ -19,10 +18,8 @@
   margin-bottom: 2rem;
 }
 
-
-/* Individual Testimonial Card */
 .images {
-  flex: 0 0 100%; /* Each slide takes full width */
+  flex: 0 0 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,11 +194,11 @@
 
 @media (max-width: 768px) {
   .slide {
-    flex: 0 0 100%; /* Single slide per view */
+    flex: 0 0 100%;
   }
 
   .testimonialContent {
-    width: 100%; /* Adjust container width for single slides */
+    width: 100%; 
   }
 }
 

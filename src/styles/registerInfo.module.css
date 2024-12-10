@@ -9,14 +9,12 @@
   top: 4rem;
   width: 100%;
   padding: 0 4rem;
-  /* flex-wrap: wrap; */
   gap: 2rem;
   justify-content: center;
 }
 
 .content {
   width: 100%;
-  /* border: 2px solid red; */
 }
 
 .content h2 {
@@ -24,10 +22,6 @@
   text-align: center;
   color: #fff;
   font-size: 30px;
-}
-
-.content p {
-  /* width: 60%; */
 }
 
 .registerInfo .image {
@@ -46,14 +40,14 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* To create space between slides */
+  gap: 0.5rem; 
 }
 
 .textWrapper h3 {
   color: #9524ff;
   font-size: 5rem;
   white-space: nowrap;
-  animation: slide-up 8s infinite ease-in-out; /* Adjusted timing to make it faster */
+  animation: slide-up 8s infinite ease-in-out;
 }
 
 @keyframes slide-up {
@@ -79,7 +73,6 @@
 
 .content button {
   background-color: transparent;
-  /* border: 1px solid #9524FF; */
   padding: 10px 4rem;
   color: #9524ff;
   font-size: 23px;
@@ -99,7 +92,6 @@
 
 @media (max-width: 1100px) {
   .content p {
-    /* border: 2px solid  green; */
     font-size: 18px;
   }
   .registerInfo .content .textWrapper {
@@ -108,12 +100,9 @@
   }
   .textWrapper h3 {
     color: #9524ff;
-    /* font-size: 5vw; */
   }
   .foundersLogo {
     width: 100%;
-    /* width: 90%; */
-    /* border: 1px solid #9524FF; */
     padding-left: 7rem;
   }
   .foundersLogo img {
@@ -133,7 +122,6 @@
   .contentContainer {
     display: flex;
     position: absolute;
-    /* top: 10px; */
   }
 
   .content p {
@@ -141,7 +129,6 @@
   }
   .foundersLogo img {
     height: 50vh;
-    /* width: 1=; */
   }
 }
 
@@ -156,13 +143,9 @@
   }
 
   .content {
-    /* padding: 1rem; */
     max-width: 100%;
   }
 
-  .textWrapper h3 {
-    /* font-size: 3rem; */
-  }
   .content h2 {
     white-space: wrap;
     text-align: center;
@@ -178,7 +161,6 @@
     align-items: center;
   }
   .registerInfo .content {
-    /* align-items: center; */
     text-align: center;
   }
   .registerInfo .image img {
@@ -189,6 +171,6 @@
     font-size: 2rem;
   }
 .registerInfo .content .textWrapper {
-    height" 70px;
+    height: 70px;
 }
 }
