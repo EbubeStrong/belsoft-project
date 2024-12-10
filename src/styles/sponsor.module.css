@@ -161,6 +161,8 @@
 
 .formContent .btn{
     padding: 1rem 1rem 0 2rem;
+    display: flex;
+    align-items: center;
 }
 .formContent .btn button{
     padding: 10px 40px;
@@ -168,6 +170,8 @@
     background-color: #9524FF;
     border: none;
     color: #fff;
+     display: flex;
+    align-items: center;
 }
 
 @media(max-width: 1200px){
@@ -233,7 +237,19 @@
 .circleContent .circle{
     border: 2px solid #9524FF; 
     margin: 20px;
-    width: 50%;
+    width: 70%;
     height: 220px;
+}
+.labelInputWrap{
+    flex-direction:column;
+}
+
+.formContent .btn{
+    margin: 0 auto;
+    justify-content: center;
+}
+.circle h3{
+    /* text-align: ; */
+    font-size: 15px;
 }
 }

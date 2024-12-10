@@ -65,7 +65,7 @@ const Header = () => {
 
       <div className={`${headerStyle.header} ${headerStyle.mobileScreen}`}>
         <div className={headerStyle.logo}>
-          <img src="/images/Logo.png" alt="Founder's Friday Logo" />
+          <img src="/images/logo.png" alt="Founder's Friday Logo" />
           <span>Founder's Friday</span>
         </div>
 

@@ -144,4 +144,38 @@
     position: absolute;
     bottom: -10px;
 }
+.aboutTextContent .aboutText{
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    padding: 0 10px;
+
+    position: relative;
+    /* border: 2px solid red; */
+
+}
+
+.aboutText .text{
+    padding-left: 10px;
+}
+
+.aboutText .text p{
+    padding-top: 3rem;
+
+    /* padding-bottom: 2rem; */
+}
+}
+
+@media(max-width: 650px){
+.aboutSection .aboutTextContent{
+    width: 100%;
+    height: 500px;
+}
+.aboutText .text p{
+    font-size: 16px;
+}
+.aboutSection .btns{
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
 }

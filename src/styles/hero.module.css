@@ -144,6 +144,7 @@
 }
 .collab-icons .icon {
     justify-content: center;
+    gap: 5px;
 }
 }
 
@@ -154,7 +155,8 @@
     }
 
     .heroSection h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .heroSection img {
